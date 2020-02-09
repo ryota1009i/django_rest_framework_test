@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = "ja-jp">
+<head>
+    <title>投稿一覧</title>
+</head>
+<body>
+    <h1>Hi My Blog!</h1>
+    <h2>last entries</h2>
+
+    {% for entry in entries.all %}
+        {{ entry.id }}
+        {{ entry.title }}
+        {{ entry.body }}
+        <br /><br />
+    {% endfor %}
+</body>
+</html>
